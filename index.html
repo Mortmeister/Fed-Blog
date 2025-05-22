@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inspire Ink - Explore Game Dev</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./global.css" />
+    <script defer type="module" src="/src/feed.mjs"></script>
+    <script type="module" src="/src/config.mjs"></script>
+    <script type="module" src="/src/carousel.js"></script>
+  </head>
+
+  <body class="theme-dark">
+    <header class="c-header-navbar">
+      <h1 class="logo">Inspire Ink</h1>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="#">About</a>
+        <a href="./account/register.html">Register</a>
+        <a id="isLoggedIn"></a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- <section class="intro-section">
+        <h1 class="main-title">Welcome to InspireInk!</h1>
+        <p class="subheading">
+          Explore the art of storytelling, game design, and everything in
+          between. Dive into the latest posts and timeless insights from the
+          indie dev and gaming community.
+        </p>
+      </section> -->
+
+      <section class="carousel" aria-labelledby="carousel">
+        <div class="carousel-controls" aria-label="Carousel controls">
+          <button
+            id="carouselPrevBtn"
+            class="tag-btn"
+            aria-label="Previous slide"
+          >
+            Previous
+          </button>
+          <div class="slides-container" id="slidesContainer"></div>
+          <button id="carouselNextBtn" class="tag-btn" aria-label="Next slide">
+            Next
+          </button>
+        </div>
+        <div
+          id="thumbnailContainer"
+          class="thumbnail-container"
+          aria-label="Slide thumbnails"
+        ></div>
+      </section>
+
+      <h2 class="section-title">Browse All Blog Posts</h2>
+
+      <section class="filter-section" aria-label="Post filters and search">
+        <div class="tags-container">
+          <h3 class="subsection-title">Tags</h3>
+          <div class="tag-filter" role="group" aria-label="Filter by tag">
+            <button class="tag-btn" data-tag="game-design">Game Design</button>
+            <button class="tag-btn" data-tag="industry-news">
+              Industry News
+            </button>
+            <button class="tag-btn" data-tag="reviews">Reviews</button>
+            <button class="tag-btn" data-tag="storytelling">
+              Storytelling
+            </button>
+            <button class="tag-btn" data-tag="tech-tools">Tech & Tools</button>
+            <button class="tag-btn" data-tag="indie-games">Indie Games</button>
+          </div>
+        </div>
+
+        <div class="sort-section">
+          <div class="sort-container">
+            <label for="sortByName">Sort by Title</label>
+            <select name="sort-by-title" id="sortByName">
+              <option value="default">Title (A-Z)</option>
+              <option value="ascending">Name A-Z</option>
+              <option value="descending">Name Z-A</option>
+            </select>
+          </div>
+          <div class="sort-container">
+            <label for="sortByDate">Sort by Date</label>
+            <select name="sort-by-date" id="sortByDate">
+              <option value="default">Sort by</option>
+              <option value="ascending">Oldest first</option>
+              <option value="descending">Newest first</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="resetTagsBtn">Reset Filters</button>
+
+        <div class="search-section">
+          <div class="sort-container">
+            <label for="searchPosts" class="visually-hidden"
+              >Search posts</label
+            >
+            <input
+              type="search"
+              id="searchPosts"
+              name="search-posts"
+              placeholder="Search"
+              aria-label="Search posts"
+            />
+          </div>
+          <button id="searchForTitleBtn">Search</button>
+        </div>
+      </section>
+
+      <section
+        class="blog-posts-section"
+        id="blogPostsFeed"
+        aria-label="Blog posts feed"
+      ></section>
+
+      <nav
+        class="pagination"
+        id="pagination"
+        aria-label="Pagination navigation"
+      ></nav>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Inspire In. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

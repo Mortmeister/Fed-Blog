@@ -1,0 +1,221 @@
+/* body {
+  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+
+.single-page-body {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.related-posts-section {
+  margin-top: 4rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.related-posts-section h1 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.related-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.related-post-container {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.related-post-container:hover {
+  transform: translateY(-4px);
+}
+
+.image-thumbnail img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.new-post {
+  padding: 2rem;
+}
+
+.form-main {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.blog-post-form {
+  background: #111;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog-post-form h2 {
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.main-input-field {
+  height: 240px;
+}
+
+.blog-post-form input,
+.blog-post-form textarea,
+.blog-post-form select {
+  background: #1a1a1a;
+  border: 1px solid #00ffff;
+  color: #fff;
+  padding: 0.7rem;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.blog-post-form input:focus,
+.blog-post-form textarea:focus,
+.blog-post-form select:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.blog-post-form button {
+  background: #00ffff;
+  color: #000;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.blog-post-form button:hover {
+  background: #00cccc;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+  background: #1a1a1a;
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.dropdown-toggle {
+  padding: 0.8rem;
+  user-select: none;
+}
+
+.dropdown-menu {
+  display: none;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  background: #111;
+  border: 1px solid #00ffff;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.dropdown.open .dropdown-menu {
+  display: grid;
+}
+
+.dropdown-menu label {
+  margin: 5px 0;
+  font-size: 16px;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.dropdown-menu input[type="checkbox"] {
+  accent-color: #00ffff;
+}
+
+.single-post {
+  padding: 3rem;
+}
+
+.single-post-container,
+.single-post-image {
+  width: 100%;
+}
+
+.single-post-image {
+  max-height: 1200px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  width: 100%;
+}
+
+.image-alt-text {
+  font-weight: 100;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.single-post-container h1 {
+  text-align: center;
+}
+
+.paragraph-body {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.author-info {
+  display: flex;
+  gap: 20px;
+}
+.author-avatar {
+  max-height: 50px;
+  border-radius: 50%;
+}
+
+.date-container {
+  display: flex;
+  justify-content: space-between;
+}

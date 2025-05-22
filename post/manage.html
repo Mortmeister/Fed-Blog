@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotview Labs - Admin</title>
+    <script defer type="module" src="../src/feed.mjs"></script>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./create.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="theme-dark">
+    <header class="c-header-navbar">
+      <h1 class="logo">Inspire Ink</h1>
+      <nav class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="#">About</a>
+        <a href="../index.html" id="logoutBtn">Sign out</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- <section class="carousel">
+        <div class="carousel-controls">
+          <button id="carouselPrevBtn" class="tag-btn">Previous</button>
+          <div class="slides-container" id="slidesContainer"></div>
+          <button id="carouselNextBtn" class="tag-btn">Next</button>
+        </div>
+        <div id="thumbnailContainer" class="thumbnail-container"></div>
+      </section> -->
+      <h1>Manage all posts</h1>
+
+      <section class="manage-posts-section">
+        <a href="../post/create.html">Create new post</a>
+      </section>
+
+      <aside class="filter-section">
+        <div class="tags-container">
+          <h2>Tags</h2>
+          <div class="tag-filter">
+            <button class="tag-btn" data-tag="game-design">Game Design</button>
+            <button class="tag-btn" data-tag="industry-news">
+              Industry News
+            </button>
+            <button class="tag-btn" data-tag="reviews">Reviews</button>
+            <button class="tag-btn" data-tag="storytelling">
+              Storytelling
+            </button>
+            <button class="tag-btn" data-tag="tech-&-tools">
+              Tech & Tools
+            </button>
+            <button class="tag-btn" data-tag="indie-games">Indie Games</button>
+          </div>
+        </div>
+
+        <div class="sort-section">
+          <h2>Sort by</h2>
+          <select name="sort-by-title" id="sortByName">
+            <option disabled selected hidden>Title (A-Z)</option>
+            <option value="ascending">Name A-Z</option>
+            <option value="descending">Name Z-A</option>
+          </select>
+
+          <select name="sort-by-date" id="sortByDate">
+            <option value="default">Sort by</option>
+            <option value="ascending">Oldest first</option>
+            <option value="descending">Newest first</option>
+          </select>
+        </div>
+
+        <div class="search-section">
+          <h2>Search</h2>
+          <input
+            type="search"
+            id="searchPosts"
+            name="search-posts"
+            placeholder="Search"
+          />
+          <button id="searchForTitleBtn">Search</button>
+        </div>
+
+        <button id="resetTagsBtn">Reset</button>
+      </aside>
+
+      <section class="blog-posts-section" id="blogPostsFeed"></section>
+      <nav class="pagination" id="pagination"></nav>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Inspire In. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

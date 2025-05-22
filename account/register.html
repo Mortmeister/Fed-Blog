@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - InspireInk</title>
+    <script type="module" defer src="../src/register.mjs"></script>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="register-section">
+      <h1>Register New Account</h1>
+      <form id="registerForm" class="register-form">
+        <label for="name">Username *</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email *</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@stud.noroff.no"
+          pattern="^[\w\-.]+@stud\.noroff\.no$"
+          title="Must be a valid stud.noroff.no email"
+          required
+        />
+
+        <label for="password">Password *</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          required
+        />
+
+        <label for="bio">Bio</label>
+        <textarea
+          id="bio"
+          name="bio"
+          rows="3"
+          placeholder="Tell us something about yourself..."
+        ></textarea>
+
+        <label for="avatarUrl">Avatar URL</label>
+        <input
+          type="url"
+          id="avatarUrl"
+          name="avatarUrl"
+          placeholder="https://img.service.com/avatar.jpg"
+        />
+
+        <label for="avatarAlt">Avatar Alt Text</label>
+        <input type="text" id="avatarAlt" name="avatarAlt" />
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <p>&copy; 2025 Inspire In. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

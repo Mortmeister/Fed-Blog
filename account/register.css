@@ -1,0 +1,90 @@
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  background: radial-gradient(circle at center, #111 0%, #000 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 0 25px rgba(0, 255, 170, 0.3);
+  text-align: center;
+  color: #fff;
+}
+
+.register-section h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0ff;
+}
+
+input[type="email"],
+input[type="url"],
+input[type="text"],
+textarea,
+input[type="password"] {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #0ff;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.7rem;
+  background: #0ff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #00c6a2;
+}
+
+.logo-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+  display: block;
+  animation: glowPulse 2s infinite ease-in-out;
+  filter: drop-shadow(0 0 8px #00ffe7);
+}
+
+@keyframes glowPulse {
+  0% {
+    filter: drop-shadow(0 0 4px #00ffe7);
+  }
+  50% {
+    filter: drop-shadow(0 0 12px #00ffe7);
+  }
+  100% {
+    filter: drop-shadow(0 0 4px #00ffe7);
+  }
+}
