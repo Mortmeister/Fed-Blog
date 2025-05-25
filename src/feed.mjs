@@ -62,7 +62,6 @@ let activeTags = new Set();
 tagButtons.forEach((button) => {
   button.addEventListener("click", async () => {
     const tag = button.dataset.tag?.toLowerCase();
-    console.log(tag);
     if (!tag) return;
 
     button.classList.toggle("active");
@@ -127,7 +126,7 @@ sortByNameEl.addEventListener("change", async ({ target }) => {
 
 /*
 On setup, go to page 1, and limit is 12 posts per page. 
-Acces page count from meta. 
+Acces page count from meta data. 
 */
 async function setup(page = 1, limit = 12) {
   const username = isUserAdmin
@@ -159,7 +158,7 @@ async function setup(page = 1, limit = 12) {
   }
 }
 
-// Only show update and delete button if the user is logged in. Check if the user is admin.
+// Only show update and delete button if the user is logged in. Check if the user is admin with a conditional operator.
 function createBlogTemplate({ title, body, tags, url, alt, id }) {
   const singlePageUrl = `../post/post.html?id=${id}`;
   return `
@@ -172,7 +171,7 @@ function createBlogTemplate({ title, body, tags, url, alt, id }) {
             </div>`
           : ""
       }
-      <h1>${title}</h1>
+      <h3>${title}</h3>
       <div class="image-wrapper">
         <a href="${singlePageUrl}">
           <img src="${url}" alt="${alt}">
@@ -183,7 +182,7 @@ function createBlogTemplate({ title, body, tags, url, alt, id }) {
   `;
 }
 
-// if the user is admin and the delete button exists, and the user checks yes, then delete.
+// Same as code above. If the user is admin and the delete button exists, and the user checks yes, then delete.
 async function createBlogListEl(list = []) {
   blogPostsFeed.innerHTML = "";
   list.forEach(({ id, title, tags, body, media }) => {

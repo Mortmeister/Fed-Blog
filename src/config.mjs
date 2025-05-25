@@ -73,6 +73,9 @@ export async function getAllBlogPosts() {
   }
 }
 
+/* Ensure its a url and that it starts with http. 
+Trim ensures there is no whitespace
+*/
 export function updateImagePreview() {
   const url = postImageUrl.value.trim();
   if (url && url.startsWith("http")) {
@@ -83,6 +86,7 @@ export function updateImagePreview() {
   }
 }
 
+// Get all posts with a certain tag
 export async function getAllRelatedPosts() {
   const options = {
     method: "GET",

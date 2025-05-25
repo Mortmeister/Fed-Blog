@@ -22,15 +22,12 @@ loginFormEl.addEventListener("submit", async (event) => {
     const username = data.name;
 
     if (response.ok) {
-      debugger;
       saveToken(authToken);
       saveUsername(username);
       window.location.href = "../post/manage.html";
-    } else {
-      alert("Wrong email or password. Please try again.");
     }
   } catch (error) {
     console.error("Error:", error);
-    alert("Something went wrong. Please try again later.");
+    alert("Wrong email or password. Please try again.");
   }
 });

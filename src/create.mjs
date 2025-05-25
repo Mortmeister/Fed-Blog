@@ -27,8 +27,6 @@ PostForm.addEventListener("submit", async (event) => {
   const url = formData.get("url");
   const alt = formData.get("alt");
 
-  debugger;
-
   const postData = {
     title,
     body,

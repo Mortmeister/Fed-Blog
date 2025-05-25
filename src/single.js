@@ -70,6 +70,24 @@ async function setup() {
     singleBlogTemplate(data);
     setupLogin();
     relatedBlogListEl(await getPostsByTag(tags, id));
+
+    const shareBtn = document.getElementById("shareButton");
+
+    if (shareBtn) {
+      const shareUrl = `${window.location.origin}${window.location.pathname}?id=${id}`;
+
+      shareBtn.addEventListener("click", () => {
+        navigator.clipboard
+          .writeText(shareUrl)
+          .then(() => {
+            alert("Post link copied to clipboard!");
+          })
+          .catch((err) => {
+            console.error("Failed to copy: ", err);
+          });
+      });
+    }
+
     return data;
   } catch (error) {
     console.error("Error fetching post:", error);
@@ -80,7 +98,7 @@ setup();
 
 /*
 To create paragraphs: 
-In the body, look for two newline characters (double space), and split them into paragraph chunks. 
+In the body, look for two newline characters (double enter), and split them into paragraph chunks. 
 Then, wrap them in individual html <p> tags
 Then, join them into one big html string. 
 ("\n") = One new line
@@ -122,6 +140,7 @@ function createBlogTemplate({
         <p class="author-name">Written by: ${name}</p>
         ${bio ? `<p class="author-bio">${bio}</p>` : ""}
       </div>
+      <i class="fa-solid fa-share" id="shareButton"></i>
       <div class="date-container"> 
        <p class="date">Published: ${created}</p>
        <p class="date">Last updated: ${updated}</p>
