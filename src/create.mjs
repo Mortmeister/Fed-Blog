@@ -50,7 +50,6 @@ PostForm.addEventListener("submit", async (event) => {
   try {
     const response = await fetch(`${NoroffURL}/${username}`, options);
     const data = await response.json();
-    console.log(data);
     window.location.href = "./index.html";
   } catch (err) {
     console.error(err);

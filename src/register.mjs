@@ -7,8 +7,6 @@ registerFormEl.addEventListener("submit", async (event) => {
 
   const formData = new FormData(registerFormEl);
 
-  debugger;
-
   const formDataInput = {
     name: formData.get("name"),
     email: formData.get("email"),

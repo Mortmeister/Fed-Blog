@@ -29,7 +29,6 @@ const blogPostForm = document.getElementById("blogPostForm");
 
 async function setup() {
   const post = await getSinglePost(IdfromSearchParam);
-  console.log(post);
   prefilBlogForm(post);
   postImageUrl.value = post.media.url;
   updateImagePreview();

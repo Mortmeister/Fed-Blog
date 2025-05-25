@@ -131,6 +131,7 @@ function createBlogTemplate({
       <h1>${title}</h1>
       <img src="${url}" class="single-post-image" alt="${alt}">
       <p class="image-alt-text">${alt}</p>
+      <i class="fa-solid fa-share" id="shareButton"></i>
       <div class="author-info">
         ${
           avatarUrl
@@ -140,7 +141,6 @@ function createBlogTemplate({
         <p class="author-name">Written by: ${name}</p>
         ${bio ? `<p class="author-bio">${bio}</p>` : ""}
       </div>
-      <i class="fa-solid fa-share" id="shareButton"></i>
       <div class="date-container"> 
        <p class="date">Published: ${created}</p>
        <p class="date">Last updated: ${updated}</p>

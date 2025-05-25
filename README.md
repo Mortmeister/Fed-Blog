@@ -1,36 +1,27 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ihcj5Zgr)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19074287&assignment_repo_type=AssignmentRepo)
-# Blog Front-end Website
-
-This bootstrap template is intended to help you deliever a amazing website which delights your end-users. Feel free to change, remove or start your own project from scratch. Please replace any text which starts with an `_`.
-
-This is a vanilla website that displays a list of items fetched from an API.
+# Noroff - FED EXAMN 2025
 
 ## Resources
 
-<!-- You must replace these links -->
-
+- [Design prototype](https://www.figma.com/proto/3Cl9K25cROC5n4UMTJoV50/Exam-fed-spring-2025?page-id=0%3A1&node-id=195-1762&p=f&viewport=18616%2C-2933%2C0.35&t=RqOG6rRX02n7ilVu-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=195%3A1762&show-proto-sidebar=1)
+- [Design system](https://www.figma.com/design/Ylx17wjh4vO69qiB8nE0Ep/FED-EXAM-DESIGN-SYSTEM?node-id=0-1)
 - [Brief](https://lms.noroff.no/mod/folder/view.php?id=121394)
-- [Design](_LINK_TO_FIGMA_)
-- [Production deploy](_LINK_TO_WEBSITE_)
-- [Deployment CI](_LINK_TO_NETLIFY_VERCEL_DASHBOARD_)
+- [Production deploy](https://inspireink-blog.netlify.app/)
 - [API Docs](https://docs.noroff.dev/docs/v2/blog/posts)
 - [API Endpoint](https://api.noroff.dev/v2/blog/posts)
 
-## Deployment
-
-Your deployment is done via static hosting provider (Netlify is recommended).
-You can update your deployment pipeling by editing the [vercel.json](https://vercel.com/docs/concepts/projects/project-configuration).
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FS3ak%2Ffed1-exam-vanilla-frontend-website&env=API_TOKEN,API_SECRET&envDescription=The%20API_TOKEN%20is%20needed%20to%20access%20a%20secure%20API%20endpoint.%20This%20can%20be%20the%20Authorization%20%60Bearer%20Token%60%20header%20used%20to%20make%20queries.&envLink=https%3A%2F%2Fvitejs.dev%2Fguide%2Fenv-and-mode.html&project-name=exam-front-end&repository-name=fed1-exam-vanilla-frontend-website&skippable-integrations=1)
-
 ## Report
 
-_ADD_YOUR_REPORT_HERE_
+During this exam period, I have built a significantly stronger foundation in frontend development, both in terms of technical skill and the way I approach a complex project. My goal was to create a professional, content-rich gaming website that caters to casual gamers, industry enthusiasts, and game developers. The platform features gaming news, reviews, developer insights, and blog posts that together reflect the broad world of gaming.
 
-## Getting Started
+From the beginning, I made a deliberate decision to focus on functionality first. My first milestone was implementing full CRUD functionality, allowing users to register, log in, and create, update, and view blog posts. This choice was based on experience from a previous project where I spent too much time designing and was left with limited time actually code. By following this approach, I ensured that the technical structure was solid before moving into the visual design. An added benefit of this strategy was that design ideas naturally emerged as I worked with the functionality.
 
-...
+Once the foundational features were complete, I switched over to the design phase and spent a significant amount of time in Figma. I developed high-fidelity wireframes, a design system, and prototypes for both mobile and desktop view. The design system included typography, color palettes and reusable components to ensure visual consistency throughout the website. After finalizing the design, I went back into coding mode and focused on implementing it across the project.
+
+Throughout the process, I encountered a wide range of challenges. These included managing authentication flows, restricting CRUD operations to logged-in users, building responsive carousels and grids, and working with the API. Interestingly, some of the most time-consuming parts of the project were small design features like the filtering and search section, which I revised repeatedly during the whole project to get right. In contrast, many of the more complex JavaScript tasks were quicker to solve. To me personally, that’s because the design process is more abstract and preferences change, whereas a certain functionality is easier to define and try to solve.
+
+I emphasized modular coding, and used export functions wherever a function was used several times and worked with several javascript files for separation of concern. I used version control by creating branches from kanban board issues, which helped me stay organized and focused.
+
+This project has helped me grow as a frontend developer, not only in terms of code and design, but in the ability to scope, plan, and complete a website.
 
 ## Minimum acceptence criteria (Required - 50%)
 
@@ -155,35 +146,36 @@ All of these todo's must be done to pass the asssignment.
 
 Make sure you go through this checklist before submitting your project to Moodle.
 
-- [ ] All pages have a meta description.
-- [ ] All pages have a valid title.
-- [ ] All pages import the correct css files.
-- [ ] All pages import the correct JS file.
-- [ ] Details page URL includes a query param.
-- [ ] My website makes a GET request to an API to get a list of results.
-- [ ] My website makes a GET request to an API to get details of one result.
-- [ ] Input fields have the following attributes;
-- [ ] All images have an alt tag;
-  - [ ] A name,
-  - [ ] A placeholder,
-  - [ ] A aria-describedby,
-  - [ ] Required
-- [ ] I have not copied Javascript code.
-- [ ] I have not used a Javascript library.
-- [ ] Removed all unused files.
-- [ ] Named all images properly.
-- [ ] Committed all my code to github.
+- [X] All pages have a meta description.
+- [X] All pages have a valid title.
+- [X] All pages import the correct css files.
+- [X] All pages import the correct JS file.
+- [X] Details page URL includes a query param.
+- [X] My website makes a GET request to an API to get a list of results.
+- [X] My website makes a GET request to an API to get details of one result.
+- [X] Input fields have the following attributes;
+- [X] All images have an alt tag;
+  - [X] A name,
+  - [X] A placeholder,
+  - [X] A aria-describedby,
+  - [X] Required
+- [X] I have not copied Javascript code.
+- [X] I have not used a Javascript library.
+- [X] Removed all unused files.
+- [X] Named all images properly.
+- [X] Committed all my code to github.
 - [ ] My repo is publically viewable.
-- [ ] I've submitted/ written a report.
-- [ ] I've removed all todo notes in code.
-- [ ] I've removed all console logs in code.
-- [ ] Code is formatted correctly.
-- [ ] There are no red underlines in VSCode.
-- [ ] There are no error messages in the terminal when I run the project.
-- [ ] My code is indented correctly.
-- [ ] I've checked my report for grammer & spelling using grammerly or chatGPT
-- [ ] I've used used [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- [ ] I've checked off every todo in this README.
+- [X] _Note: Repository visibility is managed by the course instructors in GitHub Classroom._
+- [X] I've submitted/ written a report.
+- [X] I've removed all todo notes in code.
+- [X] I've removed all console logs in code.
+- [X] Code is formatted correctly.
+- [X] There are no red underlines in VSCode.
+- [X] There are no error messages in the terminal when I run the project.
+- [X] My code is indented correctly.
+- [X] I've checked my report for grammer & spelling using grammerly or chatGPT
+- [X] I've used used [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [X] I've checked off every todo in this README.
 
 ## Help & Tutorials
 
@@ -196,5 +188,5 @@ Make sure you go through this checklist before submitting your project to Moodle
 
 ## Authors
 
-- _YOURE_NAME_ (@_your_github_username_)
+- Morten Lillehaug (@Mortmeister)
 - Monde Sineke (@S3ak)

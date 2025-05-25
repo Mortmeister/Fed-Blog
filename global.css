@@ -4,15 +4,6 @@
   --font-heading: "Bebas Neue", Impact, sans-serif;
   --font-body: "Inter", "Open Sans", Arial, sans-serif;
 
-  --font-xxl: 3rem;
-  --font-xl: 2rem;
-  --font-lg: 1.75rem;
-  --font-ml: 1.5rem;
-  --font-md: 1.25rem;
-  --font-base: 1rem;
-  --font-sm: 0.875rem;
-  --font-xs: 0.75rem;
-
   --color-accent: #00f0ff;
   --color-success: #3498db;
   --color-warning: #e74c3c;
@@ -199,6 +190,10 @@ a {
   .hamburger-menu.active {
     transform: rotate(90deg);
   }
+
+  .paragraph-body {
+    text-align: center;
+  }
 }
 
 .container > h1 {
@@ -238,6 +233,7 @@ a {
   text-align: center;
   display: -webkit-box;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -425,17 +421,6 @@ select {
   color: white;
 }
 
-/*  POST PREVIEW TEXT CLAMPING  */
-.preview-body {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 3.6em;
-  line-height: 1.8em;
-}
-
 /*  POSTS GRID  */
 .blog-posts-section {
   display: grid;
@@ -482,7 +467,6 @@ select {
 
 .post-container {
   background-color: #1a1a1a;
-  /* background-color: var(--color-bg-light); */
   display: flex;
   flex-direction: column;
   border-radius: 12px;
@@ -521,6 +505,7 @@ select {
 .post-container > h3 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -757,47 +742,9 @@ select {
   }
 }
 
-/* Skeleton */
-
-.skeleton {
-  background-color: #eee;
-  border-radius: 8px;
-  animation: pulse 1.5s infinite;
-}
-
-.skeleton-text {
-  height: 1rem;
-  margin-bottom: 0.5rem;
-  width: 100%;
-}
-
-.skeleton-title {
-  height: 2rem;
-  width: 60%;
-  margin: 1rem 0;
-}
-
-.skeleton-img {
-  height: 300px;
-  width: 100%;
-  background-color: #ddd;
-  margin-bottom: 1rem;
-}
-
-.skeleton-author {
-  height: 1.5rem;
-  width: 40%;
-  margin-bottom: 1rem;
-}
-
-@keyframes pulse {
-  0% {
-    background-color: #eee;
-  }
-  50% {
-    background-color: #ddd;
-  }
-  100% {
-    background-color: #eee;
-  }
+#shareButton {
+  display: flex;
+  padding: 0.5rem 0;
+  justify-content: end;
+  cursor: pointer;
 }

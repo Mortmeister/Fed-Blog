@@ -43,7 +43,6 @@ export function removeToken() {
 export function logout() {
   removeToken();
   removeUsername();
-  debugger;
 }
 
 export function saveUsername(username) {
