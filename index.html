@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inspire Ink - Explore Game Dev</title>
+    <title>Inspire Ink - Explore Game Development</title>
+    <meta
+      name="description"
+      content="InspireInk. Your ultimate gaming hub for news, reviews, development insights, and more."
+    />
+    <meta
+      name="keywords"
+      content="gaming, game news, reviews, developers, InspireInk, video games"
+    />
+    <meta name="author" content="InspireInk" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,14 +35,14 @@
   <body class="theme-dark">
     <header class="c-header-navbar">
       <h1 class="logo">Inspire Ink</h1>
-      <div class="hamburger-menu">
+      <div class="hamburger-menu" tabindex="0" role="button">
         <i class="fa-solid fa-bars"></i>
       </div>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="/">Home</a>
-        <a href="#">About</a>
-        <a href="./account/register.html">Register</a>
-        <a id="isLoggedIn"></a>
+        <a href="/" tabindex="0">Home</a>
+        <a href="#" tabindex="0">About</a>
+        <a href="./account/register.html" tabindex="0">Register</a>
+        <a id="isLoggedIn" tabindex="0"></a>
       </nav>
     </header>
 
@@ -44,6 +53,7 @@
             id="carouselPrevBtn"
             class="c-carousel-btn"
             aria-label="Previous slide"
+            tabindex="0"
           >
             Previous
           </button>
@@ -52,6 +62,7 @@
             id="carouselNextBtn"
             class="c-carousel-btn"
             aria-label="Next slide"
+            tabindex="0"
           >
             Next
           </button>
@@ -69,23 +80,31 @@
         <div class="tags-container">
           <h3 class="subsection-title">Tags</h3>
           <div class="tag-filter" role="group" aria-label="Filter by tag">
-            <button class="tag-btn" data-tag="game-design">Game Design</button>
-            <button class="tag-btn" data-tag="industry-news">
+            <button class="tag-btn" data-tag="game-design" tabindex="0">
+              Game Design
+            </button>
+            <button class="tag-btn" data-tag="industry-news" tabindex="0">
               Industry News
             </button>
-            <button class="tag-btn" data-tag="reviews">Reviews</button>
-            <button class="tag-btn" data-tag="storytelling">
+            <button class="tag-btn" data-tag="reviews" tabindex="0">
+              Reviews
+            </button>
+            <button class="tag-btn" data-tag="storytelling" tabindex="0">
               Storytelling
             </button>
-            <button class="tag-btn" data-tag="tech-tools">Tech & Tools</button>
-            <button class="tag-btn" data-tag="indie-games">Indie Games</button>
+            <button class="tag-btn" data-tag="tech-tools" tabindex="0">
+              Tech & Tools
+            </button>
+            <button class="tag-btn" data-tag="indie-games" tabindex="0">
+              Indie Games
+            </button>
           </div>
         </div>
 
         <div class="sort-section">
           <div class="sort-container">
             <label for="sortByName">Sort by Title</label>
-            <select name="sort-by-title" id="sortByName">
+            <select name="sort-by-title" id="sortByName" tabindex="0">
               <option value="default">Title (A-Z)</option>
               <option value="ascending">Name A-Z</option>
               <option value="descending">Name Z-A</option>
@@ -93,7 +112,7 @@
           </div>
           <div class="sort-container">
             <label for="sortByDate">Sort by Date</label>
-            <select name="sort-by-date" id="sortByDate">
+            <select name="sort-by-date" id="sortByDate" tabindex="0">
               <option value="default">Sort by</option>
               <option value="ascending">Oldest first</option>
               <option value="descending">Newest first</option>
@@ -101,7 +120,9 @@
           </div>
         </div>
 
-        <button class="c-reset-btn" id="resetTagsBtn">Reset Filters</button>
+        <button class="c-reset-btn" id="resetTagsBtn" tabindex="0">
+          Reset Filters
+        </button>
 
         <div class="search-section">
           <h3>Search posts</h3>
@@ -113,8 +134,9 @@
               name="search-posts"
               placeholder="Search"
               aria-label="Search posts"
+              tabindex="0"
             />
-            <button id="searchForTitleBtn">Search</button>
+            <button id="searchForTitleBtn" tabindex="0">Search</button>
           </div>
         </div>
       </section>

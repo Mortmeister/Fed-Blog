@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create an account to join InspireInk and contribute to the gaming community."
+    />
+
     <title>Register - InspireInk</title>
     <script type="module" defer src="../src/register.mjs"></script>
     <script type="module" src="../src/hamburger.js"></script>
@@ -20,18 +25,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
-
   <body>
     <header class="c-header-navbar">
       <h1 class="logo">Inspire Ink</h1>
-      <div class="hamburger-menu">
+      <div class="hamburger-menu" tabindex="0" role="button">
         <i class="fa-solid fa-bars"></i>
       </div>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="/">Home</a>
-        <a href="#">About</a>
-        <a href="./account/register.html">Register</a>
-        <a id="isLoggedIn"></a>
+        <a href="/" tabindex="0">Home</a>
+        <a href="#" tabindex="0">About</a>
+        <a href="./account/register.html" tabindex="0">Register</a>
+        <a id="isLoggedIn" tabindex="0"></a>
       </nav>
     </header>
 
@@ -40,10 +44,10 @@
         <h1>Register New Account</h1>
         <form id="registerForm" class="register-form">
           <label for="name">Username *</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="name" name="name" required tabindex="0" />
 
           <label for="email">Email *</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" required tabindex="0" />
 
           <label for="password">Password *</label>
           <input
@@ -52,18 +56,19 @@
             name="password"
             minlength="8"
             required
+            tabindex="0"
           />
 
           <label for="bio">Bio</label>
-          <textarea id="bio" name="bio" rows="3"></textarea>
+          <textarea id="bio" name="bio" rows="3" tabindex="0"></textarea>
 
           <label for="avatarUrl">Avatar URL</label>
-          <input type="url" id="avatarUrl" name="avatarUrl" />
+          <input type="url" id="avatarUrl" name="avatarUrl" tabindex="0" />
 
           <label for="avatarAlt">Avatar Alt Text</label>
-          <input type="text" id="avatarAlt" name="avatarAlt" />
+          <input type="text" id="avatarAlt" name="avatarAlt" tabindex="0" />
 
-          <button type="submit">Register</button>
+          <button type="submit" tabindex="0">Register</button>
         </form>
       </section>
     </main>

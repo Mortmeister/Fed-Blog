@@ -24,12 +24,8 @@ const SearchTitleInputEl = document.getElementById("searchPosts");
 const tagButtons = document.querySelectorAll(".tag-btn");
 const resetTagsBtn = document.getElementById("resetTagsBtn");
 const logoutBtnEl = document.getElementById("logoutBtn");
-const loggedInUser = document.getElementById("LoggedInUser");
-const username = getUserNameFromLS();
 
-if (loggedInUser) {
-  loggedInUser.innerHTML = `Hi, ${username}`;
-}
+const username = getUserNameFromLS();
 
 const isUserAdmin = isAdmin();
 startAutoLogoutListener();

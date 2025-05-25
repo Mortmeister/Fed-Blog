@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="InspireInk. Your ultimate gaming hub for news, reviews, development insights, and more."
+    />
+    <meta
+      name="keywords"
+      content="gaming, game news, reviews, developers, InspireInk, video games, admin home page"
+    />
+    <meta name="author" content="InspireInk" />
     <title>Hotview Labs - Admin</title>
 
     <script defer type="module" src="../src/feed.mjs"></script>
@@ -26,13 +36,13 @@
   <body class="theme-dark">
     <header class="c-header-navbar">
       <h1 class="logo">Inspire Ink</h1>
-      <div class="hamburger-menu">
+      <div class="hamburger-menu" tabindex="0" role="button">
         <i class="fa-solid fa-bars"></i>
       </div>
       <nav class="nav-links">
-        <span id="LoggedInUser"></span>
-        <a href="#">Home</a>
-        <a href="../index.html">Sign Out</a>
+        <a href="./index.html" tabindex="0">Home</a>
+        <a href="#" tabindex="0">About</a>
+        <a href="../index.html" id="logoutBtn" tabindex="0">Sign out</a>
       </nav>
     </header>
 

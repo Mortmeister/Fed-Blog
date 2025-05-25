@@ -13,12 +13,9 @@
   --font-sm: 0.875rem;
   --font-xs: 0.75rem;
 
-  --color-primary: #7b2cbf;
-  --color-secondary: #3a0ca3;
   --color-accent: #00f0ff;
-  --color-success: #4caf50;
-  --color-warning: #ffc107;
-  --color-error: #f44336;
+  --color-success: #3498db;
+  --color-warning: #e74c3c;
   --color-bg-dark: #0a0a0f;
   --color-bg-light: #1a1a2e;
   --color-ft-header: #121212;
@@ -546,11 +543,11 @@ select {
 }
 
 .deleteBtn:hover {
-  background-color: #e74c3c;
+  background-color: var(--color-warning);
 }
 
 .updateBtn:hover {
-  background-color: #3498db;
+  background-color: var(--color-success);
 }
 
 /* Footer */
@@ -757,5 +754,50 @@ select {
   }
   100% {
     filter: drop-shadow(0 0 4px #00ffe7);
+  }
+}
+
+/* Skeleton */
+
+.skeleton {
+  background-color: #eee;
+  border-radius: 8px;
+  animation: pulse 1.5s infinite;
+}
+
+.skeleton-text {
+  height: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.skeleton-title {
+  height: 2rem;
+  width: 60%;
+  margin: 1rem 0;
+}
+
+.skeleton-img {
+  height: 300px;
+  width: 100%;
+  background-color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.skeleton-author {
+  height: 1.5rem;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #eee;
   }
 }

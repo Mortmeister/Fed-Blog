@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Admin dashboard to create, edit, and manage blog posts on InspireInk."
+    />
+    <meta name="author" content="InspireInk Admin" />
     <title>Hotview Labs - Admin</title>
     <script defer type="module" src="../src/feed.mjs"></script>
     <script type="module" src="../src/hamburger.js"></script>
@@ -23,13 +29,13 @@
   <body class="theme-dark">
     <header class="c-header-navbar">
       <h1 class="logo">Inspire Ink</h1>
-      <div class="hamburger-menu">
+      <div class="hamburger-menu" tabindex="0" role="button">
         <i class="fa-solid fa-bars"></i>
       </div>
       <nav class="nav-links">
-        <a href="./index.html">Home</a>
-        <a href="#">About</a>
-        <a href="../index.html" id="logoutBtn">Sign out</a>
+        <a href="./index.html" tabindex="0">Home</a>
+        <a href="#" tabindex="0">About</a>
+        <a href="../index.html" id="logoutBtn" tabindex="0">Sign out</a>
       </nav>
     </header>
 
@@ -37,30 +43,38 @@
       <h1>Manage all posts</h1>
 
       <section class="manage-posts-section">
-        <a href="../post/create.html">Create new post</a>
+        <a href="../post/create.html" tabindex="0">Create new post</a>
       </section>
 
       <section class="filter-section" aria-label="Post filters and search">
         <div class="tags-container">
           <h3 class="subsection-title">Tags</h3>
           <div class="tag-filter" role="group" aria-label="Filter by tag">
-            <button class="tag-btn" data-tag="game-design">Game Design</button>
-            <button class="tag-btn" data-tag="industry-news">
+            <button class="tag-btn" data-tag="game-design" tabindex="0">
+              Game Design
+            </button>
+            <button class="tag-btn" data-tag="industry-news" tabindex="0">
               Industry News
             </button>
-            <button class="tag-btn" data-tag="reviews">Reviews</button>
-            <button class="tag-btn" data-tag="storytelling">
+            <button class="tag-btn" data-tag="reviews" tabindex="0">
+              Reviews
+            </button>
+            <button class="tag-btn" data-tag="storytelling" tabindex="0">
               Storytelling
             </button>
-            <button class="tag-btn" data-tag="tech-tools">Tech & Tools</button>
-            <button class="tag-btn" data-tag="indie-games">Indie Games</button>
+            <button class="tag-btn" data-tag="tech-tools" tabindex="0">
+              Tech & Tools
+            </button>
+            <button class="tag-btn" data-tag="indie-games" tabindex="0">
+              Indie Games
+            </button>
           </div>
         </div>
 
         <div class="sort-section">
           <div class="sort-container">
             <label for="sortByName">Sort by Title</label>
-            <select name="sort-by-title" id="sortByName">
+            <select name="sort-by-title" id="sortByName" tabindex="0">
               <option value="default">Title (A-Z)</option>
               <option value="ascending">Name A-Z</option>
               <option value="descending">Name Z-A</option>
@@ -68,7 +82,7 @@
           </div>
           <div class="sort-container">
             <label for="sortByDate">Sort by Date</label>
-            <select name="sort-by-date" id="sortByDate">
+            <select name="sort-by-date" id="sortByDate" tabindex="0">
               <option value="default">Sort by</option>
               <option value="ascending">Oldest first</option>
               <option value="descending">Newest first</option>
@@ -76,7 +90,9 @@
           </div>
         </div>
 
-        <button class="c-reset-btn" id="resetTagsBtn">Reset Filters</button>
+        <button class="c-reset-btn" id="resetTagsBtn" tabindex="0">
+          Reset Filters
+        </button>
 
         <div class="search-section">
           <h3>Search posts</h3>
@@ -88,8 +104,9 @@
               name="search-posts"
               placeholder="Search"
               aria-label="Search posts"
+              tabindex="0"
             />
-            <button id="searchForTitleBtn">Search</button>
+            <button id="searchForTitleBtn" tabindex="0">Search</button>
           </div>
         </div>
       </section>

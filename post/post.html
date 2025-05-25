@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Read full articles about your favorite games and stay updated with expert industry commentary."
+    />
+    <meta
+      name="keywords"
+      content="game blog, post, single article, gaming news, developer insights"
+    />
+    <meta name="author" content="InspireInk" />
+
     <title>InspireInk - single page</title>
     <script defer type="module" src="../src/single.js"></script>
     <script type="module" src="../src/hamburger.js"></script>
@@ -22,13 +32,13 @@
   <body>
     <header class="c-header-navbar">
       <h1 class="logo">Inspire Ink</h1>
-      <div class="hamburger-menu">
+      <div class="hamburger-menu" tabindex="0" role="button">
         <i class="fa-solid fa-bars"></i>
       </div>
       <nav class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="#">About</a>
-        <a id="isLoggedIn"></a>
+        <a href="../index.html" tabindex="0">Home</a>
+        <a href="#" tabindex="0">About</a>
+        <a id="isLoggedIn" tabindex="0"></a>
       </nav>
     </header>
 
